@@ -1,2 +1,3 @@
-# Bonares2SipApp
-A Tool to generate csv SIPs for Intelectual Entities of BonaRes
+# BonaresSubapp
+Dies ist die App, die die Datenpakete von den ZALF Schnittstellen abholt,
+nach Rosetta ingestet und sie anschließend acknowledged.
