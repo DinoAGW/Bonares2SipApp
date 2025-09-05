@@ -1,7 +1,5 @@
 package de.zbmed.api;
 
-import java.util.Iterator;
-
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
@@ -13,11 +11,11 @@ public class Zalf {
 	public static void main(String[] args) throws Exception {
 		JsonNode uploads = getToAcknowledge();
 		System.out.println(uploads.toPrettyString());
-		JsonNode obj = uploads.get(0);
-		for (Iterator<String> iterator = obj.fieldNames(); iterator.hasNext();) {
-			String fieldName = iterator.next();
-			System.out.println(fieldName + " -> " + obj.get(fieldName));
-		}
+//		JsonNode obj = uploads.get(0);
+//		for (Iterator<String> iterator = obj.fieldNames(); iterator.hasNext();) {
+//			String fieldName = iterator.next();
+//			System.out.println(fieldName + " -> " + obj.get(fieldName));
+//		}
 		System.out.println("RestApi Ende");
 	}
 
